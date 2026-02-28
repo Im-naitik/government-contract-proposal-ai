@@ -18,6 +18,7 @@ Attachments: Solicitation PDFs linked via attachmentInfo
 Critical limitation: No webhooks. Data freshness requires polling.
 
 GovPreneurs Opportunity JSON Schema
+```
 json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -42,6 +43,7 @@ json
     "placeOfPerformance": {"type": "string"}
   }
 }
+```
 Ingestion Strategy
 Daily Full Sync (12 AM UTC): Fetch all active notices (limit 5000) via /v1/search?limit=5000&status=active
 
@@ -95,7 +97,7 @@ CONTEXT:
 [USER PROFILE WITH PAST PERFORMANCE]
 
 OUTPUT FORMAT:
-```markdown
+markdown
 # {Company Name} Proposal Response
 ## 1. Executive Summary
 ...
